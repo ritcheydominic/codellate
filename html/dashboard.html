@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Codellate</title>
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/dashboard.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar -->
+            <div class="bg-light border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading">Assignments</div>
+                    <div class="list-group list-group-flush" id="assignment-list" role="tablist">
+                </div>
+            </div>
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <!-- Header Navigation Bar -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <form class="form-inline" id="navbar-action-btns">
+                        <!-- Modify, Add and Remove buttons only appear on instructor's dashboard -->
+                        <button class="btn btn-primary mr-1" type="button" id="modify-assignment-btn" disabled>Modify</button>
+                        <button class="btn btn-success mx-1" type="button" id="add-assignment-btn">Add</button>
+                        <button class="btn btn-danger mx-1" type="button" id="remove-assignment-btn" disabled>Remove</button>
+                    </form>
+                </nav>
+
+                <!-- Assignment Pane -->
+                <div class="container-fluid" id="assignment-pane-wrapper">
+                    <div class="tab-content" id="assignment-pane">
+                    </div>
+
+                    <!-- <div class="tab-pane fade show active mt-2" id="no-assignment-selected" role="tabpanel"><i>No assignment selected.</i></div>
+                        <div class="tab-pane fade" id="assignment-100000000" role="tabpanel">1</div>
+                        <div class="tab-pane fade" id="assignment-200000000" role="tabpanel">
+                            <nav>
+                                <div class="nav nav-tabs" id="assignment-pane-nav" role="tablist">
+                                  <a class="nav-item nav-link active" id="assignment-info-nav" data-toggle="tab" href="#assignment-info-tab" role="tab">Home</a>
+                                  <a class="nav-item nav-link" id="assignment-comments-nav" data-toggle="tab" href="#assignment-comments-tab" role="tab">Profile</a>
+                                  <a class="nav-item nav-link" id="assignment-submissions-nav" data-toggle="tab" href="#assignment-submissions-tab" role="tab">Contact</a>
+                                </div>
+                              </nav>
+                              <div class="tab-content" id="assignment-pane-tabs">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"></div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="assignment-300000000" role="tabpanel">3</div> -->
+
+                    <!-- <h3 class="mt-4">Test Assignment</h1>
+                    <p><b>Assigned on: </b>Test</p>
+                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
+                    <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p> -->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.jQuery = window.$ = require('jquery');
+        </script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/dashboard.js"></script>
+    </body>
+</html>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
+    <form class="form-inline">
+        <button class="btn btn-primary mr-1 btn-sm" type="button">Refresh</button>
+        <button class="btn btn-success mx-1 btn-sm" type="button">Add</button>
+        <button class="btn btn-danger mx-1 btn-sm" type="button" disabled>Remove</button>
+    </form>
+</nav> -->

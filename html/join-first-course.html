@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Codellate</title>
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/join-first-course.css" rel="stylesheet">
+    </head>
+    <body class="text-center" id="join-course-form">
+        <form class="form-signin">
+            <div class="text-center mb-4">
+                <h1 class="h3 mb-3 font-weight-normal">Join a course</h1>
+            </div>
+            <div class="text-center mb-3">
+                <label class="h6 mb-3 font-weight-normal">It looks like you haven't joined a course yet. Enter a join code to continue.</label>
+            </div>
+            <div class="form-label-group">
+                <input type="course-join-code" id="course-join-code-input" class="form-control mb-4" placeholder="Course join code" required autofocus>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block mb-3" type="submit" id="join-course-btn">Join course</button>
+            <button class="btn btn-link mb-2" type="button" id="sign-out-btn">Sign out</button>
+            <div class="text-center" id="footer-msg-div">
+                <label class="h6 font-weight-normal text-muted">Created by Dominic Ritchey</label>
+            </div>
+        </form>
+
+        <script src="../js/join-first-course.js"></script>
+    </body>
+</html>

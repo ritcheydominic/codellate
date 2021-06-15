@@ -5,7 +5,11 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "set ELECTRON_ENABLE_LOGGING=true && electron .",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   },
   "repository": {
     "type": "git",
@@ -18,11 +22,18 @@
   },
   "homepage": "https://github.com/ritcheydominic/Codellate#readme",
   "devDependencies": {
-    "electron": "^8.2.3"
+    "electron": "^8.2.5"
   },
   "dependencies": {
+    "amazon-cognito-identity-js": "^4.2.3",
+    "aws-sdk": "^2.670.0",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.5.0",
-    "popper.js": "^1.16.1"
+    "bootstrap-icons": "^1.0.0-alpha3",
+    "jquery": "^3.5.1",
+    "moment": "^2.25.3",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.0",
+    "popper.js": "^1.16.1",
+    "s3": "^4.4.0"
   }
 }
